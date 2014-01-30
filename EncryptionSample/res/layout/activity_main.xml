@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:hint="Input Text" />
+
+    <EditText
+        android:id="@+id/encrypted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input"
+        android:layout_marginTop="30dp"
+        android:hint="Encrypted Text" />
+
+    <EditText
+        android:id="@+id/decrypted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/encrypted"
+        android:layout_marginTop="30dp"
+        android:hint="Decrypted Text" />
+
+    <Button
+        android:id="@+id/encrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/decrypted"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Encrypt" />
+
+</RelativeLayout>
