@@ -52,7 +52,7 @@ public class SecurityProvider {
 		byte[] keyStart = "safe is locked".getBytes();
 		try {
 			KeyGenerator kgen = KeyGenerator.getInstance(ALGORITHM);
-			SecureRandom sr = SecureRandom.getInstance("SHA1PRNG");
+			SecureRandom sr = SecureRandom.getInstance("SHA1PRNG", "Crypto");
 			sr.setSeed(keyStart);
 			kgen.init(128, sr); // 192 and 256 bits may not be available
 			SecretKey skey = kgen.generateKey();
